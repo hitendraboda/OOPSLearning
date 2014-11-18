@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfacePolymorphisam\Circle.cs" />
+    <Compile Include="InterfacePolymorphisam\IShape.cs" />
+    <Compile Include="InterfacePolymorphisam\Rectangle.cs" />
+    <Compile Include="InterfacePolymorphisam\Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

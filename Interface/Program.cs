@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interface.InterfacePolymorphisam;
 
 namespace Interface
 {
@@ -50,7 +51,24 @@ namespace Interface
          Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
          t1.showTransaction();
          t2.showTransaction();
+
+         #region Polymorphism using Interface
+
+          System.Console.WriteLine(System.Environment.NewLine);
+
+          IShape IShapeRec = new Rectangle();
+          IShapeRec.Draw();
+
+          IShape IShapeCir = new Circle();
+          IShapeCir.Draw();
+
+          IShape IShapeTri = new Triangle();
+          IShapeTri.Draw();
+
+         #endregion
+
          Console.ReadKey();
       }
+
    }
 }
